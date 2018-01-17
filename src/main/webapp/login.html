@@ -11,7 +11,7 @@
 	integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" 
 	crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="resources/css/style.css">
-<title>Reimbursement System Home</title>
+<title>Login</title>
 </head>
 <body class="container">
 	<div class="navbar">
@@ -27,10 +27,15 @@
 	</div>
 	
 	<div class="jumbotron vertical-center">
-		<p>Welcome to the Reimbursement System. Please login</p>
+		<form method="post" action="login.do">
+			<header>Login</header>
+			<label>Username:</label>
+			<input type="text" name="j_username" size="32"><br/>
+			<label>Password:</label>
+			<input type="password" name="j_password" size="32"><br/>
+			<input type="submit" class="btn btn-primary" value="Login">
+		</form>
 	</div>
-
-
 
 </body>
 </html>
