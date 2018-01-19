@@ -17,7 +17,7 @@ public class JunitTests {
 		DAOUtils.getConnection();
 	}
 	
-	@Test
+	@Test @Ignore
 	public void testLogin() {
 		User testuser = new User(1, "Edward", "Mass", "emass23", "password1", "Manager");
 		
